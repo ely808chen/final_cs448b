@@ -1,0 +1,12 @@
+name: Visual2B
+title: Visual2B
+username: jennie24
+account: jennie24
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10767515
+bundleId: 8032263
+url: https://jennie24.shinyapps.io/Visual2B/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
