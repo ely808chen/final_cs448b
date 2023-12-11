@@ -1,0 +1,13 @@
+name: Visual2A
+title: Visual2A
+username: jennie24
+account: jennie24
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10767327
+bundleId: 8032926
+url: https://jennie24.shinyapps.io/Visual2A/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: neighborhood_NYC.geojson|neighborhood_shapefile.json
