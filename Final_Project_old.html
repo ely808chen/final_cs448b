@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 448B Final Project</title>
+    <style>
+        body {
+            font-family: "Tiempos Text Web", Georgia, Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: rgb(255, 192, 203); /* Initial background color (pink) */
+            color: rgb(0, 0, 0);
+            transition: background-color 0.5s ease; /* Smooth transition for background color */
+        }
+
+        header {
+            background-color: rgb(255, 192, 203);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgb(251, 250, 250);
+            border-radius: 8px;
+            opacity: 0; /* Initially hide the main content */
+            transform: translateY(20px); /* Move the content down */
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        iframe {
+            width: 100%;
+            height: 734px;
+            border: 0;
+        }
+
+        /* Main Header  */
+        h1 {
+            font-size: 2.35em;
+            margin-bottom: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-top: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        h3 {
+            font-size: 1.0em;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        h4 {
+            font-size: 1em;
+            margin-top: 12vh;
+            margin-bottom: 0;
+            color: rgb(111, 111, 111); 
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: rgb(0, 0, 0);
+        }
+
+        .article-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Surprising Things Data Reveal About Airbnb in NYC</h1>
+        <h3>Manhattan Sucks For Investment.<br>
+            Disparities by Borough in Listing "Popularity" have Seasonality.<br>
+            Listings with X Accommodates Are The Best Value?</h3>
+        <h4>By Ely Chen and Janice Li</h4>
+    </header>
+
+    <!-- <main class="titles" style="margin-bottom: 0px;">
+        <h1 style="margin-bottom: 0px;">
+            Surprising things data conveys about Airbnb in NYC
+        </h1>
+        <!-- <h3 style="margin-top: 0px;">
+            Manhattan Sucks For Investment.
+            Disparities in Listing "Popularity" have Seasonality.
+            Listings with X Accommodates Are The Best Value?
+        </h3> -->
+    <!-- </main>  -->
+
+    <!-- Introduction -->
+    <main class="introduction" style="margin-bottom: 0px;">
+        <h2 style="margin-top: 20px;">
+            To Begin...
+        </h2>
+        <p>
+            New York City is full of AirBnBs. With nearly 40,000 listings available in the city, 
+            there are around 33 AirBnB listings per square mile in the city. And as we delve into 
+            the AirBnB landscapes in New York, we discovered data points that portray a surprising picture 
+            that defies common expectations. In this explainer, we will guide you through why Manhattan isn’t
+            the ideal borough for investment, how seasonality exists in the borough disparities of 
+            listing “popularity,” and the “sweet spots” of listings in terms of the number of accommodates. 
+            Join us on an exploration through the unexpected as we look into the surprising insights from the
+            NYC AirBnB Data. 
+        </p>
+    </main>
+
+    <!-- Visual 1 & Explanation -->
+    <main class="article-container-1" style="margin-top: 0px;">
+        <h2 style="margin-bottom: 10px;">
+            I. Manhattan Sucks For AirBnB Investing
+        </h2>
+        <p>
+            Manhattan is expensive. Real estate in Manhattan is expensive. That's why people commonly consider 
+            owning a property in Manhattan to be extremely lucrative. But what about for AirBnB properties? 
+            Is having an AirBnB property in Manhattan good for investing?
+        </p>
+
+        <div style="margin-bottom: 0px; color:rgb(119, 118, 118)"> 
+            Figure Usage: The color scheme in the map represents the level of Average Monthly Revenue per borough. 
+            The number initially presented on the circle represents number of listings per borough. Tap anywhere in 
+            the map to drill-down more info on the borough/neighbourhood of your interest!
+        </div>
+
+        <!-- Put iframe here -->
+    
+        <p>
+            Surprisingly, the data says otherwise. In the interactive map, we see that Manhattan generates $4931 per month 
+            for Average Monthly Revenue per Listing, which is not the highest of five boroughs. Matter of fact, 
+            <b>AirBnB properties in Manhattan generate second least average monthly revenue in NYC.</b> The borough with 
+            the highest Average Monthly Revenue is Staten Island ($6569), which is directly followed by Brooklyn ($6495),
+            Queens ($5784), Manhattan ($4931), and Bronx ($4216). As we typically associate Manhattan and Brooklyn as the two boroughs that attract the most amount of 
+            travelers, this finding is unexpecting. 
+            <br><br>
+            As we dig deeper by tapping into the borough on the map, we get a better picture as to why this is the case.
+            If we take a closer look into each borough's listing price distribution, we see that Manhattan's price distribution 
+            is much more skewed towards the right than the other 4 boroughs, as much more proportion of properties are 
+            in the $150+ bins in the price distribution than any other boroughs. In other words, listings in Manhattan 
+            are likely to be priced higher than listings in other boroughs (and it's not just the extremely expensive 
+            listing pulling the average price up). The suggests that despite the higher pricing tendencies of AirBnBs 
+            in Manhattan, the Average Monthly Revenue per Listing is lower than most other boroughs due to the smaller 
+            frequency in bookings/nights stayed. <b>This suggests the insight that the AirBnB market in Manhattan may be oversaturated 
+            (which makes intuitive sense, as Manhattan has the most listings).</b> Moreover, given that real estate properties 
+            in Manhattan tend to be more expensive than other boroughs, we can say that Manhattan is surprisingly 
+            not great for investing. 
+
+        </p>
+    </main>
+
+    <!-- Visual 2 & Explanation -->
+    <main class="article-container-2">
+        <h2 style="margin-bottom: 10px;">
+            II. INPUT TITLE HERE 
+        </h2>
+
+        <p>
+
+        </p>
+    </main>
+
+    <!-- Visual 3 & Explanation -->
+    <main class="article-container-3">
+        <h2 style="margin-bottom: 10px;">
+            III. Even Disparities in Listing "Popularity" have Seasonality
+        </h2>
+        <p>
+            It's not hard to see that the demand for Airbnb has seasonality. 
+            New York City is more popular as a travel destination in some seasons than others.
+            However, what might surprise you is that even the 
+            <b>disparity between boroughs in the nights-stayed-per-listing is seasonal.</b> 
+            Take a look (and animate/use slider!) at the following interactive chart, which displays the progression of 
+            average nights stayed per listing for each borough from January to October 2023 (the size of the circles 
+            represen the number of listings in that borough). 
+        </p>
+
+        <div style="margin-bottom: 0px; color:rgb(119, 118, 118)"> 
+            Figure Usage: Each circle represents a borough, where circle size represents the number of listings. 
+            Black verticle lines represent the difference in average nights stayed per listing between the borough 
+            with the highest value and the lowest value. Hover over this line to see this number. The five colored 
+            lines represent the progression of average nights stayed per listing across months. Hover over the line 
+            to highlight the line for a clearer view. Hover over the circle for the number of listings in the associated borough.
+            <b>Tap play button or use the slider to observe how demand per listing changes for each borough by months.</b>
+        </div>
+
+        <iframe width="100%" height="734" frameborder="0"
+        src="https://observablehq.com/embed/96c678e26442b982@433?cells=viewof+monthFilterIndex%2CmyChartMain">
+        </iframe>
+
+        <p>
+            We can see from the interactive chart that the disparities in nights-stayed-per-listing between 
+            boroughs vary significantly depending on the months. In the winter, the disparity is small, with 
+            February only having a 2.3-night difference in average nights stayed per listing between the borough 
+            with the highest value, Manhattan, and the borough with the lowest value, Bronx (you can view this 
+            information for all months by hovering over the black interval line on the chart). However, 
+            as the months progress into spring, this disparity grows. By April, the gap in average nights stayed 
+            per listing has doubled, reaching 4.84-night difference the amount in January. This trend continues into summer 
+            and early fall, peaking in September with a substantial <b>14.4-night difference</b> between the borough with
+            the highest value, Queens, and the lowest value, Manhattan. Subsequently, this gap begins to shrink, 
+            with October showing a smaller (but still significant) 8-night difference in average nights stayed per
+            listing between boroughs. Hence, there is a pronounced seasonality in the disparity of average nights 
+            stayed per listing in NYC, reaching a point where this value <b>septuples</b> (yes, that means x7) 
+            from the month with low disparity to the month with high disparity. 
+            <br><br>
+            Moreover, if we look at the animation/line across the months, we also notice that the boroughs with 
+            higher or lower avearge nights stayed per listings are not always the same. Manhattan, a borough most 
+            would associate as the most popular, starts off being as a borough with the highest average nights stayed per 
+            listings in January and February, but soon gets surpassed by all other boroughs, becoming the borough with 
+            lowest average nights stayed per listings from June to October. Another surprising case is Bronx, where 
+            the borough is usually amongst the lowest in average nights stayed per listing with the exception of 
+            August and September, where we see a huge spike that puts them in 3rd highest. Finally, Queens consistently
+            has the highest average nights stayed per listings across all months, which is surprising as many would 
+            expect that title to be held by Manhattan or Brooklyn (the two most iconic NYC boroughs). 
+            <br><br>
+            So what's the insight? Three things. (1) Manhattan likely faces an oversaturated market, and this data 
+            serves as additional evidence supporting that observation (as mentioned in section I). (2) Queens appears to be the sweet spot in 
+            terms of demand per listing. Therefore, having an Airbnb property in Queens may offer the best chances 
+            of keeping the property consistently booked when compared to other boroughs. (3) For prospective Airbnb
+            owners who are considering to lease only on specific seasons, it may be advantageous to take into account
+            of the observed seasonality. If leasing only in the summer (e.g., while being out of town for summer holiday),
+            Queens, Staten Island, and Brooklyn emerge as solid options. For winter leasing, Manhattan, Queens, 
+            and Brooklyn are strong contenders. As for spring, Brooklyn and Queens stand out as favorable choices.
+            <br> 
+            
+        </p>
+
+    <!-- Visual 4 & Explanation -->
+    <!-- <main class="article-container-4">
+        <h2 style="margin-bottom: 10px;">
+            VI. Bonus: Monthly Average Nights Stayed 
+        </h2>
+
+        <iframe width="100%" height="584" frameborder="0"
+            src="https://observablehq.com/embed/73b898b32a8f5f9a@335?cells=Chart_Aug_Oct">
+        </iframe>  
+              
+        <p>
+
+        </p>
+    </main>         -->
+
+    </main>
+
+    <script>
+        // Add a script to handle background color change on scroll
+        document.addEventListener("scroll", function () {
+            // Change the background color based on scroll position
+            document.body.style.backgroundColor = window.scrollY > 50 ? "#ffffff" : "rgb(255, 192, 203)";
+
+            // // Make the main content visible when scrolled
+            // const mainTitle = document.querySelector('main.titles');
+            // if (window.scrollY > 100) {
+            //     mainTitle.classList.add('visible');
+            // }
+
+            // Make the visualization visible when scrolled
+            const mainContent = document.querySelector('main.introduction');
+            if (window.scrollY > 200) {
+                mainContent.classList.add('visible');
+            }
+
+            const visualization_1 = document.querySelector('main.article-container-1');
+            if (window.scrollY > 300) {
+                visualization_1.classList.add('visible');
+            }
+
+            const visualization_2 = document.querySelector('main.article-container-2');
+            if (window.scrollY > 400) {
+                visualization_2.classList.add('visible');
+            }
+
+            const visualization_3 = document.querySelector('main.article-container-3');
+            if (window.scrollY > 500) {
+                visualization_3.classList.add('visible');
+            }
+
+            // const visualization_4 = document.querySelector('main.article-container-4');
+            // if (window.scrollY > 500) {
+            //     visualization_4.classList.add('visible');
+            // }
+        });
+    </script>
+
+</body>
+
+</html>

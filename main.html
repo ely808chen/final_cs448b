@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src='https://d3js.org/d3.v7.min.js'> </script>
+    <title>D3 for CS448B</title>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <p1>Hello world</p1>
+    
+    <p2>Hello again!</p2>
+    <!-- <div id="my_dataviz"></div> -->
+    <!-- <script src="visual.js"></script>  -->
+    <!-- <div id="observablehq-data-60c8cf05"></div> -->
+    <!-- <script src="visual.js"></script>  -->
+
+    <div id="observablehq-myPlot-c2385922"></div>
+    <p>Credit: <a href="https://observablehq.com/d/29c1c3c696c2a21e@21">Plot Trial by Ely Chen&#039;s Workspace</a></p>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/29c1c3c696c2a21e@21.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "myPlot") return new Inspector(document.querySelector("#observablehq-myPlot-c2385922"));
+    });
+    </script>
+
+
+</body>
+</html>
