@@ -1,0 +1,13 @@
+name: Visual1
+title: Visual1
+username: jennie24
+account: jennie24
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10764429
+bundleId: 8030637
+url: https://jennie24.shinyapps.io/Visual1/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: airbnb_data|data_cleaning.R|www/Cleaned_Data_Airbnb.csv
