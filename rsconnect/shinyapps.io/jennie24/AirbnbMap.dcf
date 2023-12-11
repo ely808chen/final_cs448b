@@ -1,0 +1,13 @@
+name: AirbnbMap
+title: AirbnbMap
+username: jennie24
+account: jennie24
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10756241
+bundleId: 8027206
+url: https://jennie24.shinyapps.io/AirbnbMap/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: 11_cleaned_listings_new.csv|11_cleaned_listings.csv|airbnb_data|Cleaned_Data_Airbnb.csv|data_cleaning.R|house_icon.png|nybb_20231128.geojson|www/NYC_Map.png
